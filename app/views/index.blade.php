@@ -16,7 +16,7 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>地區</th>
+                        <th>村里</th>
                         <th>未篩人數</th>
                     </tr>
                 </thead>
