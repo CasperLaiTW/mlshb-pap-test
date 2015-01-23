@@ -1,5 +1,5 @@
 @section('main')
-    <div ng-controller="analyticsCtrl" ng-init="init();">
+    <div ng-controller="analyticsCtrl">
         <div class="jumbotron">
             <h1>名單分析</h1>
             <div class="form-group">
@@ -12,7 +12,21 @@
         </div>
 
         <div class="result" ng-show="isAnalytics">
-
+            <h6 class="page-header">分析結果</h6>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>地區</th>
+                        <th>未篩人數</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="(key, value) in result">
+                        <td><% key %></td>
+                        <td><% value %></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 @stop
